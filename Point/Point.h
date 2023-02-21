@@ -4,11 +4,13 @@ namespace miit::point
 	class Point
 	{
 	public:
-		Point();
-		Point(const int x, const int y);
+		Point(const int x = 0, const int y = 0);
+
+		const int Abscissa() const;
+		const int Ordinate() const;
 
 	private:
-		int x;
-		int y;
+		int abscissa;
+		int ordinate;
 	};
 }
